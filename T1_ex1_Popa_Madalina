@@ -1,33 +1,33 @@
 %Pentru o rezolutie de 2 ms
 t=0:0.002:4;%sunt afisate 2 perioade
 f=0.5;
-w=2*pi*f;
+omega=2*pi*f;
 duty=25;
 nivel=0.25;
 procent=0.75; %Arata cat la suta din amplitudine sa se afiseze
-s=(procent*square(w*t,duty))-nivel;
+s=(procent*square(omega*t,duty))-nivel;
 subplot(3,1,1) %Se vor afisa mai multe grafice, iar acesta va fi pozitionat primul 
 plot(t,s),grid,xlabel('t [s]'),ylabel('A [V]')
 
 % Pentru o rezolutie de 20 ms
 t=0:0.02:4; %sunt afisate 2 perioade
 f=0.5;
-w=2*pi*f;
+omega=2*pi*f;
 duty=25;
 nivel=0.25;
 procent=0.75;
-s=(procent*square(w*t,duty))-nivel;
+s=(procent*square(omega*t,duty))-nivel;
 subplot(3,1,2) %Acest grafic va fi afisat al 2-lea
 plot(t,s),grid,xlabel('t [s]'),ylabel('A [V]')
 
 %Pentru o rezolutie de 200 ms
 t=0:0.2:4; %sunt afisate 2 perioade
 f=0.5;
-w=2*pi*f;
+omega=2*pi*f;
 duty=25;
 nivel=0.25;
 procent=0.75;
-s=(procent*square(w*t,duty))-nivel;
+s=(procent*square(omega*t,duty))-nivel;
 subplot(3,1,3) %Acest grafic va fi afisat al 3-lea
 plot(t,s),grid,xlabel('t [s]'),ylabel('A [V]')
 
