@@ -1,0 +1,36 @@
+2.
+%Pentru rezolutie de 2 ms
+hold on,xlabel('t [s]'),ylabel('A [V]')
+x = 0: 0.002: 3;
+y = -x+1;
+subplot(3,1,1)
+plot(x, y, 'b')
+x=3:0.002:6; %nu imi afisa bine semnalul pt amplitudinea de 5, asa ca am rezolvat cu amplitudinea de 6
+y = x-5;
+plot(x,y,'b'),grid 
+
+
+%Pentru rezolutie de 20 ms
+hold on,xlabel('t [s]'),ylabel('A [V]')
+x = 0: 0.02: 3;
+y = -x+1;
+subplot(3,1,2)
+plot(x, y, 'b')
+x=3:0.02:6;
+y = x-5;
+plot(x,y,'b'),grid
+
+
+%Pentru rezolutie de 200 ms
+hold on,xlabel('t [s]'),ylabel('A [V]')
+x = 0: 0.2: 3;
+y = -x+1;
+subplot(3,1,3)
+plot(x, y, 'b')
+x=3:0.2:6;
+y= x-5;
+plot(x,y, 'b'), grid
+
+
+
+
